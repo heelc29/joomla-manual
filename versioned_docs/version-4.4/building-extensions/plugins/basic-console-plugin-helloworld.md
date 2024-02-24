@@ -142,7 +142,7 @@ As described [here](basic-content-plugin.md), there are a number of things you n
 ## Manifest file
 
 ```xml title="plg_helloworld_cli/helloworld.xml"
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <extension type="plugin" group="console" method="upgrade">
 	<name>Helloworld Console Application</name>
 	<version>1.0.0</version>

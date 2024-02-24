@@ -26,7 +26,7 @@ If you have access to the file system of your web application then you can obvio
 If instead you want to install your script in the usual way, then you must use "file" as your extension type in the manifest file, for example. 
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <extension type="file" version="4.4" method="upgrade">
     <name>Custom Script</name>
     <version>1.0</version>

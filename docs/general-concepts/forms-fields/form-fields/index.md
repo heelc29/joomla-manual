@@ -7,7 +7,7 @@ title: Standard Form Fields
 Joomla provides an extensive range of type of fields which you can use in your forms. The source code for these field types is found in the libraries/src/Form/Field directory, and nearly all of these are described at [Joomla standard form fields](https://docs.joomla.org/Standard_form_field_types).
 To use one of these in your form you simply set it as the `type`, as in the following example:
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <form>
   <field
     name="message"

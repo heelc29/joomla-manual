@@ -72,7 +72,7 @@ However, there is one case where you need to give Joomla a helping hand - in you
 
 As XML files don't have PHP `<namespace>` statements you have to provide the equivalent, and it's easiest to do this by including an `addfieldprefix` or `addruleprefix` attribute within an XML element which encloses where you use them, eg:
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <form
     addruleprefix="Mycompany\Component\Example\Administrator\Rule"
     addfieldprefix="Mycompany\Component\Example\Administrator\Field"

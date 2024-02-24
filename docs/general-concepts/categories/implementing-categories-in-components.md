@@ -42,7 +42,7 @@ You should add an entry in your component's submenu to enable administrators to 
 You need to access some entries into your access.xml, eg
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <access component="com_yourcomponent">
     <section name="component">
             <action name="core.admin" title="JACTION_ADMIN"/>

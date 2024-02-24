@@ -25,7 +25,7 @@ This section is missing, please use the **Edit this Page** link at the bottom of
 A system plugin example
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <extension type="plugin" group="system" method="upgrade">
   <name>plg_system_EXTENSIONNAME</name>
   <author>THE AUTHOR</author>

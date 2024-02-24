@@ -25,7 +25,7 @@ The diagram shows the plugin files to write, or you can download a zip file of t
 For general information on manifest files see [Manifest Files](https://docs.joomla.org/Manifest_files).
 
 ```xml title="plg_shortcodes/shortcodes.xml"
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <extension method="upgrade" type="plugin" group="content">
     <name>PLG_CONTENT_SHORTCODES</name>
     <version>1.0</version>
