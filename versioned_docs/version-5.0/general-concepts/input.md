@@ -285,7 +285,7 @@ In a folder `mod_input` create the following 2 files:
 `mod_input.xml`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="module" version="3.1" client="site" method="upgrade">
+<extension type="module" client="site" method="upgrade">
     <name>Input demo</name>
     <version>1.0.1</version>
     <description>Code demonstrating use of Joomla Input class to obtain HTTP parameters</description>

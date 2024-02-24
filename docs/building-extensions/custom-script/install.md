@@ -27,7 +27,7 @@ If instead you want to install your script in the usual way, then you must use "
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="file" version="5.1" method="upgrade">
+<extension type="file" method="upgrade">
     <name>Custom Script</name>
     <version>1.0</version>
     <description>Script to count the number of articles in the database</description>

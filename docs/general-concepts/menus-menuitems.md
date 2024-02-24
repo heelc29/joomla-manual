@@ -137,7 +137,7 @@ In a folder mod_sample_menu create the following 2 files:
 **mod_sample_menu.xml**
 ```php
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="module" version="3.1" client="site" method="upgrade">
+<extension type="module" client="site" method="upgrade">
     <name>Menu demo</name>
     <version>1.0.1</version>
     <description>Code demonstrating use of Joomla APIs related to Menus and Menu Items</description>

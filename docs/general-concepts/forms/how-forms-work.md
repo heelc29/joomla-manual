@@ -93,7 +93,7 @@ For simplicity this component uses the Joomla 3 way of defining a component, and
 `com_sample_form1.xml` Manifest file for the component 
 ```php
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="component" version="3.1.0" method="upgrade">
+<extension type="component" method="upgrade">
 
 	<name>com_sample_form1</name>
 	<version>1.0.0</version>
