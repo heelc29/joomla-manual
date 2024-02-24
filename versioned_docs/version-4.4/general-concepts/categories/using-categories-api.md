@@ -265,7 +265,7 @@ Then in your extension file (in the src/Extension/CategoriesDemoModule.php file 
 
 namespace Mycompany\Module\CategoriesDemo\Site\Extension;
 
-defined('JPATH_PLATFORM') or die;
+defined('_JEXEC') or die;
 
 use Joomla\CMS\Categories\CategoryServiceInterface;
 use Joomla\CMS\Categories\CategoryServiceTrait;

@@ -151,7 +151,7 @@ And to match this you need to have some key lines in your Extension class:
 
 namespace Mycompany\Component\Example\Administrator\Extension;
 
-defined('JPATH_PLATFORM') or die;
+defined('_JEXEC') or die;
 
 use Joomla\CMS\Categories\CategoryServiceInterface;
 use Joomla\CMS\Categories\CategoryServiceTrait;
