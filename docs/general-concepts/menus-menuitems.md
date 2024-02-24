@@ -155,7 +155,7 @@ defined('_JEXEC') or die('Restricted Access');
 use Joomla\CMS\Factory;
 
 $app = Factory::getApplication();
-$input = $app->input;
+$input = $app->getInput();
 
 $sitemenu = $app->getMenu();
 

@@ -61,7 +61,7 @@ In this step you process the submitted data. This involves 4 parts:
 You can use the Joomla [Input](../input.md) functionality to get the data which the user entered. For example 
 ```php
 $app = Factory::getApplication();
-$data = $app->input->post->get('myform', array(), "array");
+$data = $app->getInput()->post->get('myform', array(), "array");
 ```
 will read the POST `myform` parameters into an associative array.
 
@@ -149,7 +149,7 @@ $prefillData = array("email" => ".@.");
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
 	$app   = JFactory::getApplication();
-	$data = $app->input->post->get('myform', array(), "array");
+	$data = $app->getInput()->post->get('myform', array(), "array");
 	echo "Message was " . $data["message"] .
 		", email was " . $data["email"] .
 		", and telephone was " . $data["telephone"] . "<br>";

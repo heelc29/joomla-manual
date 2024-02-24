@@ -130,7 +130,7 @@ use Joomla\CMS\Categories\Categories;
 use Joomla\CMS\Categories\CategoryNode;
 
 $app = Factory::getApplication();
-$input = $app->input;
+$input = $app->getInput();
 $ext = $input->get('categoryextension', "Content", "STRING");
 $tab = $input->get('categorytable', "Content", "STRING");
 echo "Getting {$ext} categories and using {$tab} table<br>";
