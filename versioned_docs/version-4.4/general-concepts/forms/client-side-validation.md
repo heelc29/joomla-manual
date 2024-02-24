@@ -12,7 +12,7 @@ Factory::getApplication()->getDocument()->getWebAssetManager()->useScript('form.
 ```
 If you're writing this line within a tmpl file, then you will usually have the `Document` available:
 ```php
-$this->document->getWebAssetManager()->useScript('form.validate');
+$this->getDocument()->getWebAssetManager()->useScript('form.validate');
 ```
 This line will result in the file media/system/js/fields/validate.js being sent to the client browser.
 
@@ -107,7 +107,7 @@ You should store all js files within the media folder, eg as media/js/validate-m
 
 3. Include your asset within your code, eg in your tmpl file:
 ```php
-$this->document()->getWebAssetManager()->useScript('com_example.validate-message');
+$this->getDocument()()->getWebAssetManager()->useScript('com_example.validate-message');
 ```
 
 4. In your form definition XML file specify the field to which this validation should be applied

@@ -12,7 +12,7 @@ Adding this functionality to your own component is very simple and is usually a 
 ### Check if you are you using WebAssetManager
 Look for this line of code in the php block at the top of your `tmpl` file.
 ```
-$wa = $this->document->getWebAssetManager();
+$wa = $this->getDocument()->getWebAssetManager();
 ```
 
 ### Already using WebAssetManager
@@ -26,7 +26,7 @@ Note the line ending. Your final code will look similar to this example
 
 ```
 /** @var \Joomla\CMS\WebAsset\WebAssetManager $wa */
-$wa = $this->document->getWebAssetManager();
+$wa = $this->getDocument()->getWebAssetManager();
 $wa->useScript('table.columns')
     ->useScript('multiselect');
 ```
@@ -36,7 +36,7 @@ Add the following code anywhere in the php block at the top of your `tmpl` file.
 
 ```
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
-$wa = $this->document->getWebAssetManager();
+$wa = $this->getDocument()->getWebAssetManager();
 $wa->useScript('table.columns');
 ```
 

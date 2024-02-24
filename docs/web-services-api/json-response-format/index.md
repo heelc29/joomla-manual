@@ -736,7 +736,7 @@ class JsonView extends BaseJsonView
 
         parent::display($tpl);
 
-        echo $this->document->render();
+        echo $this->getDocument()->render();
     }
 }
 ```
@@ -749,7 +749,7 @@ class JsonView extends BaseJsonView
 
     For example, your forum component may be saving the IP address alongside the user ID and creation date and time of a forum post. DO NOT make the IP address and user ID available to the public. This combination is considered Personally Identifiable Information and can result in fines! Just the user ID may be privileged information depending on the context of the site (remember that usernames are not privileged information, but the internal user IDs are).
 
--   `$this->document->render()`: Outputs the document
+-   `$this->getDocument()->render()`: Outputs the document
 
 One more time, using your favorite API client, make a request to the route `[yourLocalRootSiteURL]/api/index.php/v1/vapi/modules/[idOfYourModule]`. You will get:
 
