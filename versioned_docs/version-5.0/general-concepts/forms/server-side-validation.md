@@ -101,8 +101,8 @@ use Joomla\CMS\Form\Form;
 
 class TelephoneRule extends FormRule
 {
-	protected $regex = '^[0-9\#\*]+$';  // just numbers plus * plus #
-    
+    protected $regex = '^[0-9\#\*]+$';  // just numbers plus * plus #
+
     public function test(\SimpleXMLElement $element, $value, $group = null, Registry $input = null, Form $form = null)
     {
         if (preg_match(\chr(1) . $this->regex . \chr(1) . $this->modifiers, $value)) {

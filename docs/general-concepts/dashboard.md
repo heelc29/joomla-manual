@@ -4,11 +4,11 @@ It is common usage to insert a link into the component menu for direct access to
 This is done in the manifest file: 
 
 ```xml title="Menu item Component in example.xml "
-    <administration>
-	    <menu>COM_EXAMPLE</menu>
-	
-	[.. ]
-	</administration>
+<administration>
+	<menu>COM_EXAMPLE</menu>
+
+[..]
+</administration>
 ```
 Add a dashboard to your component:
 ==================================
@@ -23,7 +23,7 @@ The param dashboard
 
 ```xml title="Dashboard Link "
 <administration>
-	<menu>>
+	<menu>
 		COM_EXAMPLE
 		<params>
 			<dashboard>example</dashboard>
@@ -40,9 +40,9 @@ Joomla provides now a dashboard for your component. You can add modules here usi
 Give your dashboard a name and an icon. Add this to your manifest file:
 
 ```xml title="Dashboard title and icon"
-    <dashboards>
-		<dashboard title="COM_EXAMPLE" icon="icon-calendar">example</dashboard>
-	</dashboards>
+<dashboards>
+	<dashboard title="COM_EXAMPLE" icon="icon-calendar">example</dashboard>
+</dashboards>
 ```
 
 ## Submenu
@@ -111,23 +111,23 @@ In a folder 'presets' create a preset file, name it example.xml.
 ## Manifest file
 
 ```xml title="New folder in example.xml"
-	<administration>
+<administration>
 
-    [..]
+	[..]
 
-		<files folder="admin">
-            <folder>forms</folder>
-			<folder>language</folder>
-            <folder>presets</folder>
-			<folder>services</folder>
-			<folder>sql</folder>
-			<folder>src</folder>
-            <folder>tmpl</folder>
-            <filename>access.xml</filename>
-            <filename>config.xml</filename>
-			<filename>example.xml</filename>
-		</files>
-	</administration>
+	<files folder="admin">
+		<folder>forms</folder>
+		<folder>language</folder>
+		<folder>presets</folder>
+		<folder>services</folder>
+		<folder>sql</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<filename>access.xml</filename>
+		<filename>config.xml</filename>
+		<filename>example.xml</filename>
+	</files>
+</administration>
 ```
 
 ## install script
@@ -136,9 +136,9 @@ We suppose here that you have a install script in your component. If not, please
 
 You add your preset in the dashboard of your component with a single line of code during installation: 
 
-```xml title="installation script"
-    // Add menu module to dashboard 
-    $this->addDashboardMenu('example', 'example');
+```php title="installation script"
+// Add menu module to dashboard 
+$this->addDashboardMenu('example', 'example');
 ```
 
 See also: https://api.joomla.org/cms-4/classes/Joomla-CMS-Installer-InstallerScript.html#method_addDashboardMenu

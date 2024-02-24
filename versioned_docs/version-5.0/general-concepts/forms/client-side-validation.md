@@ -92,17 +92,17 @@ You should store all js files within the media folder, eg as media/js/validate-m
 2. Assuming you're writing this for a component `com_example`, include the js file within your media/joomla.asset.json list of assets. The code is dependent upon the `form.validate` entry and upon jquery:
 ```json
 {
-      "name": "com_example.validate-message",
-      "type": "script",
-      "uri": "com_example/validate-message.js",
-      "dependencies": [
+    "name": "com_example.validate-message",
+    "type": "script",
+    "uri": "com_example/validate-message.js",
+    "dependencies": [
         "form.validate", "jquery"
-      ],
-      "attributes": {
+    ],
+    "attributes": {
         "defer": true
-      },
-      "version": "1.0.0"
-    } 
+    },
+    "version": "1.0.0"
+} 
 ```
 
 3. Include your asset within your code, eg in your tmpl file:

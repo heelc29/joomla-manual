@@ -47,10 +47,10 @@ If this is an administration module then Joomla will create the namespace prefix
 For plugins:
 ```xml
 <namespace path="src">Mycompany\Plugin\Content\Example</namespace>
-	<files>
-		<filename plugin="example">example.php</filename>
-		<folder>src</folder>
-	</files>
+<files>
+	<filename plugin="example">example.php</filename>
+	<folder>src</folder>
+</files>
 ```
 Here there's an extra part to the namespace, which must be set to the plugin type – 'Content' in the example above. 
 

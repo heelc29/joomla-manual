@@ -30,7 +30,7 @@ use Joomla\Http\HttpFactory;
 use Joomla\Uri\Uri;
 
 $http = (new HttpFactory())->getAvailableDriver();
-$url   = 'https://example.org/api/index.php/v1';
+$url  = 'https://example.org/api/index.php/v1';
 $uri  = new Uri($url);
 
 // Put your Joomla! Api token in a safe place, for example a password manager or a vault storing secrets

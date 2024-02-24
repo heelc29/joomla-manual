@@ -21,7 +21,6 @@ This document explains how you can then obtain the data items listed above.
 To get the value of a specific parameter use
 ```php
 $val = $input->get(param_name, default_value, filter);
-
 ```
 where: 
 - `param_name` is a string containing the name of the parameter you want to retrieve 

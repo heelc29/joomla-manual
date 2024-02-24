@@ -61,7 +61,7 @@ You can follow through the Joomla code yourself in libraries/src/Extension/Exten
 Notice also the following line in that file:
 ```php
 if ($extension instanceof BootableExtensionInterface) {
-            $extension->boot($container);
-        }
+    $extension->boot($container);
+}
 ``` 
 So if the Extension class implements `BootableExtensionInterface` then Joomla will immediately call the `boot` function of the Extension instance, as described in the [Extension documentation](../extension-and-dispatcher/extension-component.md).
